@@ -5,6 +5,8 @@ metadata:
   labels:
     app.kubernetes.io/name: batch
     app.kubernetes.io/instance: batch
+  annotations:
+    kustomize.toolkit.fluxcd.io/ssa: ignore-replicas
 spec:
   replicas: 1
   selector:
